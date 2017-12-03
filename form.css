@@ -1,0 +1,82 @@
+/*
+Wonky WhatsIts
+Author: Katrina Ward
+Date: 11/24/2017
+*/
+
+/* Simple spacing for form */
+form#contact	{
+	margin: 30px 10px;
+}
+
+
+/* Sets font size, removes border, sets spacing */
+form#contact > fieldset	{
+	font-size: 1.1em;
+	border: none;
+	padding: 10px;
+	margin-top: 10px;
+}
+
+
+/* Setting form items as flex boxes */
+div.formRow	{
+	display: -webkit-flex;
+	display: flex;
+	
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+}
+
+/* Same font as page, large boxes   */
+div.formRow > *	{
+	-webkit-flex: 1 1 150px;
+	flex: 1 1 150px;
+	
+	font-family: 'Alice', serif;
+	/* Font used under Open Font License from https://fonts.google.com/specimen/Alice?selection.family=Alice */
+	font-size: 1em;
+	line-height: 30px;
+	border: 1px solid #808080;
+	padding-left: 10px;
+	margin:10px;
+}
+
+/* Fixes select height to match other inputs */
+#prodType	{
+	height: 33px;
+}
+
+/* Greys first option in product list */
+select, select option:first-of-type	{
+	color: #808080;
+} /* Couldn't color just the first, stays grey when selected. RETRY */
+
+
+/* Hide scroll bars in textarea */
+textarea	{
+	overflow: hidden;
+	height: 200px;
+}
+
+input#emailList	{
+	margin-left: 10px;
+}
+
+/* Center buttons */
+div#buttons	{
+	text-align: center;
+	margin: auto;
+}
+
+/* Same text, simple outline, no-bkg, large button */
+.resub	{
+	background: #efefef;
+	font-family: 'Alice', serif;
+	/* Font used under Open Font License from https://fonts.google.com/specimen/Alice?selection.family=Alice */
+	font-size: 1.1em;
+	line-height: 30px;
+	border: 1px solid #808080;
+	padding: 0px 10px;
+	margin: 20px 5px;
+}

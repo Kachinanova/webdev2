@@ -1,0 +1,45 @@
+/*
+Wonky WhatsIts
+Author: Katrina Ward
+Date: 11/02/2017
+*/
+
+
+/* Flex box rules */
+#gallery	{
+	display: -webkit-flex;
+	display: flex;
+	
+	flex-direction: column;
+	flex-flow: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+
+
+/* Sets width, white bkg, grey border */
+.tile	{
+	flex: auto;
+	
+	width: 300px;
+	background-color: white;
+	padding: 10px;
+	margin: .5vw;
+	border: 1px solid #808080;
+}
+
+
+/* Takes up & scales with tile -padding*/
+.photo	{
+	Width: 100%;
+
+}
+
+
+
+/* Large, centered text */
+figcaption	{
+	font-size: 1.1em;
+	text-align: center;
+}

@@ -1,0 +1,385 @@
+@charset "utf-8";
+
+/*
+Wonky WhatsIts
+Author: Katrina Ward
+Date: 11/24/2017
+*/
+
+/* ... */
+*	{ box-sizing: border-box; }
+/* Compatability with older browsers */
+header, nav, main, footer	{ display: block; }
+
+
+/* Wood background, stretched, no-tiling 
+RUBRIC: Background (11/02) - Color & Image, chosen for their warm, rustic feel. */
+html	{
+	background: #4b2927 url(images/drkwalnut.jpg) center center / 100% 100% no-repeat fixed;
+	/* This image is used under Creative Commons from https://pixabay.com/en/wood-grain-structure-texture-board-2065366/  */
+}
+
+
+/* MedBrown body, Drk border w/blur, Alice font 
+RUBRIC: Border (11/02) - Chosen to give depth, page floating above bkg. */
+body	{
+	background-color: #926049;
+	font-family: 'Alice', serif;
+	/* Font used under Open Font License from https://fonts.google.com/specimen/Alice?selection.family=Alice */
+	max-width: 1000px;
+	width: 80%;
+	margin: auto;
+	border: 5px solid #33282c;
+	border-radius: 0 0 20px 20px;
+	box-shadow: #33282c 10px 0px 40px,
+				#33282c -10px 0px 40px;
+}
+
+
+header	{
+	/* The img font is used under Creative Commons from https://www.dafont.com/carnivalee-freakshow.font?back=theme */
+}
+
+
+/*
+Thick, centered nav bar
+RUBRIC: Pseudo Elements (11/01) - Allows psecial effects for links when hovered and clicked.
+*/
+nav	{
+	text-align: center;
+	font-size: 1.4em;
+	height: 40px;
+	padding-top: 3px;
+}
+nav a	{ text-decoration: none; }
+nav a:link	{ color: #efefef; }
+nav a:visited	{ color: #efefef; }
+nav a:hover	{ color: #d5deda; }
+
+
+/* Horizontal nav with no text decor */
+nav ul	{
+	list-style-type: none;
+	margin: auto;
+}
+
+nav li	{
+	display: inline;
+	padding: 2%;
+}
+
+
+/* Off white background for main section */
+main	{
+	display: -webkit-flex;
+	display: flex;
+	
+	background-color: #efefef;
+	min-height: 500px;
+}
+
+
+/* Locks h1 & p sizes */
+h1	{
+	font-size: 1.8em;
+	padding: 10px 15px;
+}
+
+p	{
+	font-size: 1.1em;
+	padding: 3px 10px;
+}
+
+
+/* Centers ans stretches quoted text */
+blockquote	{
+	font-size: 1.1em;
+	text-align: justify;
+	width: 75%;
+	padding: 20px 0px;
+	margin: auto;
+}
+
+
+/* Wide, simple table, thin grey border */
+table	{
+	width: 80%;
+	max-width: 600px;
+	border: 1px solid #808080;
+	margin: 20px auto;
+}
+
+
+/* Size and space for table content */
+th	{
+	font-size: 1.2em;
+	padding: 10px 5px;
+}
+
+td	{
+	font-size: 1.1em;
+	padding: 10px 3px;
+}
+
+
+/* Centers numbers in table */
+.num	{
+	text-align: center;
+}
+
+
+/* Floats Right */
+.right	{
+	float: right;
+}
+
+
+/* Simple small white text */
+footer	{
+	font-size: .85em;
+	color: #efefef;
+	text-align: center;
+
+}
+
+
+/* Pale green w/rounded left-border, floated right */
+aside	{
+	display: -webkit-flex;
+	display: flex;
+	
+	flex-direction: column;
+	flex-shrink: 0;
+	order: 99;
+	
+	align-content: flex-start;
+	align-items: center;
+	text-align: center;
+	
+	background-color: #e8ecea;
+	border-left: 2px solid #d5deda;
+	border-radius: 15px;
+	font-size: 1em;
+	min-height: 100%;
+	width: 250px;
+	padding: 20px;
+}
+
+section#content	{
+	flex: 1;
+	min-height: 100%;
+}
+
+/* Header img width adjusts w/page, alt text large, thin bottom border */
+#head	{
+	color: #efefef;
+	font-size: 3em;
+	width: 100%;
+	border-bottom: 1px solid #33282c;
+}
+
+#navicon	{
+	display: none;
+}
+
+
+/* left/icon green background */
+#searchBox	{
+	width: 100%;
+	background: #fff url(images/searchicon.png) 5px 50% no-repeat;
+	/* Icon used under Creative commons from http://www.softicons.com/system-icons/web0.2ama-icons-by-chrfb/search-icon */
+	color: #808080;
+	font-family: 'Alice', serif;
+	/* Font used under Open Font License from https://fonts.google.com/specimen/Alice?selection.family=Alice */
+	font-size: 1em;
+	line-height: 25px;
+	border: 1px solid #808080;
+	margin: auto;
+	padding-left: 25px;
+}
+
+
+/* Small banner for aside with centered text below */
+#subscbanner	{
+	width: 100%;
+	margin: 30px 15px 0px 0px;
+}
+
+#subscribe	{
+	text-align: center;
+}
+
+
+/* White email, grey submit */
+#emailBox	{
+	background: #fff;
+	color: #808080;
+	font-family: 'Alice', serif;
+	/* Font used under Open Font License from https://fonts.google.com/specimen/Alice?selection.family=Alice */
+	font-size: 1em;
+	line-height: 25px;
+	border: 1px solid #808080;
+	width: 100%;
+	padding-left: 10px;
+	margin: auto;
+}
+
+#submit	{
+	background: #efefef;
+	font-family: 'Alice', serif;
+	/* Font used under Open Font License from https://fonts.google.com/specimen/Alice?selection.family=Alice */
+	font-size: 1.1em;
+	line-height: 30px;
+	border: 1px solid #808080;
+	width: 100%;
+	margin-top: 5px;
+}
+
+#submit:hover	{
+	background: #d7c3ad;
+}
+
+
+/* Four faded media icons, get brighter on hover */
+#icons	{
+	margin-top: 20px;
+}
+
+
+/* Sizing for hero shot */
+#crafter	{
+	width: 100%;
+}
+
+
+/* Circle images for aside / NOT SURE IF GONNA USE */
+.popular	{
+	background-color: white;
+	width: 80%;
+	border: 1px solid #808080;
+	padding: 2px;
+	margin: 20px auto;
+}
+
+
+/* Tile behind non gallery images */
+.white	{
+	background-color: white;
+	padding: 10px;
+	border: 1px solid #808080;
+}
+
+
+/* Indents and pads paragraph */
+.indent	{
+	text-indent: 25px;
+	padding: 3px 25px;
+}
+
+
+
+
+/* This icon section is mostly modified from https://www.w3schools.com/howto/howto_css_social_media_buttons.asp */
+.fa	{
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	height: 30px;
+	width: 30px;
+	padding: 7px;
+	margin: 5px 2px;
+	border-radius: 50%;
+	opacity: 0.6;
+}
+
+.fa:hover	{
+	opacity: 0.8;
+}
+
+.fa-facebook	{ background: #3B5998; }
+.fa-instagram	{ background: #125688; }
+.fa-pinterest	{ background: #cb2027; }
+.fa-etsy	{ background: #eb6d20; }
+
+
+
+/*
+Check device type & display / DESKTOP: 1025px +
+RUBRIC: Desktop Query () - Not yet fleshed. - AT LEAST 3 SELECTORS
+*/
+@media only screen and (min-width: 1025px)	{
+	
+}
+
+
+
+/*
+Check device type & mobile display / TABLET: 481px - 1024px
+RUBRIC: Tablet Query () - Not yet fleshed. - AT LEAST 3 SELECTORS
+*/
+@media only screen and (min-width: 481px) and (max-width: 1024px)	{
+	
+}
+
+
+
+/* 
+Check device type & mobile display / PHONE: 0 - 480px 
+RUBRIC: Mobile Query (11/24) - Stream lines page, hided nav, shows navicon, hides elements. - AT LEAST 3 SELECTORS
+*/
+@media only all and (max-width: 480px)	{
+	/* Removes background */
+	html	{
+		background: none;
+	}
+	
+	/* Stretches width */
+	body	{
+		width: 100%;
+	}
+
+	
+	/* Hides normal nav */
+	nav ul	{
+		display: none;
+	}
+	
+	#navicon	{ /* Shows three bars */
+		display: block;
+	}
+	
+	#navicon:hover+ul, nav:hover	{ /* Expands nav bar when clicked */
+		height: 100px;
+	}
+	
+	#navicon:hover+ul, nav ul:hover	{ /* Displays nav ul when clicked */
+		display: block;
+	} /* FIGURE OUT HOW TO REMOVE INLINE */
+	
+	
+	/* Moves flexbox elements above/below each other */
+	main{
+		flex-flow: row wrap;
+	}
+	
+	
+	/* Removes bkg + border, stretches width */
+	aside	{
+		background: none;
+		border: none;
+		width: 100%;
+		margin: 0;
+	}
+	
+	
+	/* Hides element */
+	.mobile	{
+		display: none;
+	}
+	
+	.indent	{
+	text-indent: 15px;
+	padding: 3px 10px;
+	text-align: justify;
+}
+}

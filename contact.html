@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<!--
+Wonky WhatsIts
+Author: Katrina Ward
+Date: 11/24/2017
+-->
+
+
+<title>Get Ahold of Us</title>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+
+<!-- RUBRIC: Metadata (11/13) - title, author, description, keywords, and viewport. -->
+<meta name="title" content="Get Ahold of Us">
+<meta name="author" content="Katrina Ward">
+<meta name="description" content="Contact us.">
+<meta name="keywords" content="homemade, kicknacks, wood, journal, planner, dreamcatcher, crafts, bookend, bookself, 'by hand'">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="icon" type="image/png" href="images/favicon.png">
+<!-- DONT FORGET TO MAKE ICON (SAME AS LOGO) -->
+<link href="wonky.css" rel="stylesheet">
+<link href="form.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Alice" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body>
+	
+	<header>
+		<a href=""><img id="head" src="images/scenichead2.jpg" alt="Wonky WhatsIts"></a>
+	</header>
+
+	<nav>
+		<img id="navicon" src="images/navicon.png" alt="Navigation Button">
+	
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="gallery.html">Gallery</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</nav>
+
+	<main>
+		
+		<aside>
+			<div>
+				<input name="search" id="searchBox" type="text" placeholder="Search...">
+			</div>
+			
+			<div id="icons">	<!-- Found these icons at https://www.w3schools.com/howto/howto_css_social_media_buttons.asp -->
+				<a class="fa fa-facebook" href="#"></a>
+				<a class="fa fa-instagram" href="#"></a>
+				<a class="fa fa-pinterest" href="#"></a>
+				<a class="fa fa-etsy" href="#"></a>
+				
+			</div>
+			
+			<div class="mobile">
+				<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."
+				</p>	<!-- Placeholder / REMEMBEER TO REMOVE -->
+			</div>
+			
+			<form>
+				<img id="subscbanner" src="images/subscribe.png" alt="Subscribe"> <!-- Used under Creative Commons from: https://flic.kr/p/4HfRow -->
+					
+				<p id="subscribe">Receive regular updates straight to your inbox!</p>
+					
+				<input name="email" id="emailBox" type="email" placeholder="Your Email">
+					
+				<button id="submit" type="submit">SUBSCRIBE</button>
+			</form>
+			
+			<div class="mobile">
+				<h1 class="sidehead">Top Sellers</h1>
+				
+				<a href="#"><img class="popular" src="images/resinstools.jpg" alt="Wood and Resin Stools"></a>
+				<!-- Used under Creative Commons from: https://flic.kr/p/qJTMvD -->
+
+				
+
+				<a href="#"><img class="popular" src="images/walkingsticks.jpg" alt="Various Carved Walking Sticks"></a>
+				<!-- Used under Creative Commons from: https://flic.kr/p/h2KMv4 -->
+	
+				<a href="#"><img class="popular" src="images/spoonwings.jpg" alt="Spoon Wings Sculpture"></a>
+				<!-- Used under Creative Commons from: https://flic.kr/p/gh4rqR -->
+
+			</div>
+
+		</aside>
+		
+		
+		<section id="content">
+		
+			<h1>Lorem Ipsum Dolor Sit Amet</h1>
+		
+			<p>I try to respond to emails within 1-3 days, however, reponse times may be slower around the holidays as order volume increases.
+			</p>
+			
+			<p>Smaller custom orders such as books or bookends usually take 1-2 weeks to ship.
+			</p>
+				
+			<p>Larger items such as bookcases or tables take between 2-4 weeks depending on size and complexity.
+			</p>
+		
+		
+			<form id="contact" action="#">
+				<fieldset>
+					<!-- RUBRIC: Fieldsets (11/24) - Two fieldsets to seperate personal from product inputs.
+					
+					RUBRIC: Legend (11/24) - Visually splits and labels sections. -->
+					<legend>Personal Information</legend>
+					
+					<div class="formRow">
+						<!-- RUBRIC: Input Boxes (11/24) - Simple inputs allow entry of short text.
+						
+						RUBRIC: Input Required (11/24) - First and Last names are required to ensure I know who is ordering/asking for info.
+
+						RUBRIC: Placeholders (11/24) - Used to replace labels for a sleeker look.
+
+						RUBRIC: Patterns (11/24) - Prevents special characters and limits character length. -->
+						<input name="perInfo" id="fName" type="text" placeholder="First Name *" pattern="[A-Za-z]{20}" required>
+						
+						<input name="perInfo" id="lName" type="text" placeholder="Last Name *" pattern="[A-Za-z]{30}" required>
+					</div>
+						
+					<div class="formRow">
+						<!-- RUBRIC: 2 Data Types (11/24) - Email type allows basic formating to input. -->
+						<input name="perInfo" id="email" type="email" placeholder="Your Email *" required>
+						
+						<!-- RUBRIC: 2 Data Types (11/24) - Tel type allows basic formatting to phone numbers. -->
+						<input name="perInfo" id="phone" type="tel" placeholder="Phone Number" pattern="\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$">
+					</div>
+
+				</fieldset>
+				
+				<fieldset>
+					<legend>Order/Information Request</legend>
+					
+					<div class="formRow">
+						<select name="ordInfo" id="prodType">
+							<option value="" selected disabled hidden>Product Type</option>
+							<option value="woodBookLarge">Wooden Journal: Large</option>
+							<option value="woodBookA5">Wooden Journal: A5</option>
+							<option value="leatherBookA5">Leather Journal: A5</option>
+							<option value="layerBookend">Layered Bookends</option>
+						</select>
+						
+						<input name="ordInfo" id="timeFrame" type="text" Placeholder="Time Frame">
+					</div>
+					
+					<div class="formRow">
+						<input name="ordInfo" id="lineOne" type="text" placeholder="Custom Text Line 1">
+						
+						<input name="ordInfo" id="lineTwo" type="text" placeholder="Custom Text Line 2">
+					</div>
+					
+					<div class="formRow">
+						<!-- RUBRIC: maxlength (11/24) - Allows sufficient space to write specific instructions while preventing an entire essay. -->
+						<textarea name="ordInfo" id="comments" placeholder="Have a custom order in mind? Or perhaps a question?" maxlength="1000"></textarea>
+					</div>
+					
+					<!-- RUBRIC: Field Labels (11/24) - Label/Checkbox combo allows user to subscribe to email list while filling out form. -->
+					<input name="perInfo" id="emailList" type="checkbox" value="yes">
+					<label for="emailList">Add me to your mailing list and keep me up-to-date on current products and specials.</label>
+					
+				</fieldset>
+				
+				<div id="buttons">
+					<!-- RUBRIC: Reset Button (11/24) - Allows user to erase input values. -->
+					<input class="resub" type="reset" value="RESET">
+					<!-- RUBRIC: Submit Button (11/24) - Allows user to submit their form (once I learn how). -->
+					<input class="resub" type="submit" value="SUBMIT">
+				</div>
+			
+			</form>
+		
+		</section>
+	
+	</main>
+
+	<footer>
+		<p>Copyright &copy; 2017 Wonky WhatsIts</p>
+	</footer>
+		
+</body>
+</html>

@@ -5,7 +5,7 @@
 <!--
 Wonky WhatsIts
 Author: Katrina Ward
-Date: 11/24/2017
+Date: 12/07/2017
 -->
 
 
@@ -22,7 +22,7 @@ Date: 11/24/2017
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <link rel="icon" type="image/png" href="images/favicon.png">
-<!-- DONT FORGET TO MAKE ICON (SAME AS LOGO) -->
+
 <link href="wonky.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Alice" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -40,6 +40,7 @@ Date: 11/24/2017
 		<img id="navicon" src="images/navicon.png" alt="Navigation Button">
 	
 		<ul>
+			<!-- RUBRIC: Text Lvl Element 1/5 (11/02) - "A" tag allows nav links to each page. -->
 			<li><a href="index.html">Home</a></li>
 			<li><a href="about.html">About</a></li>
 			<li><a href="gallery.html">Gallery</a></li>
@@ -54,17 +55,17 @@ Date: 11/24/2017
 				<input name="search" id="searchBox" type="text" placeholder="Search...">
 			</div>
 			
-			<div id="icons">	<!-- Found these icons at https://www.w3schools.com/howto/howto_css_social_media_buttons.asp -->
+			<div id="icons">
 				<a class="fa fa-facebook" href="#"></a>
 				<a class="fa fa-instagram" href="#"></a>
 				<a class="fa fa-pinterest" href="#"></a>
 				<a class="fa fa-etsy" href="#"></a>
-				
+				<!-- Found these icons at https://www.w3schools.com/howto/howto_css_social_media_buttons.asp -->
 			</div>
 			
 			<div class="mobile">
-				<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."
-				</p>	<!-- Placeholder / REMEMBEER TO REMOVE -->
+				<p>Every item shown can be made as shown or customized to fit your home. Feel free to contact us with any questions you may have regarding the items or process.
+				</p>
 			</div>
 			
 			<form>
@@ -96,24 +97,51 @@ Date: 11/24/2017
 		</aside>
 		
 		
-		<section id="content">
-			<h1>Lorem Ipsum Dolor Sit Amet</h1>
+		<section>
+			<h1>Quality You Can Trust</h1>
 			
-			<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-			</p>	<!-- Placeholder / REMEMBEER TO REMOVE -->
+			<p>When you close your eyes and imagine your perfect home, what one item stands out? Is it a beautiful dinging table, a rugged sculpture, or perhaps an elegantly carved bookcase? Whatever it is, our goal is to make sure it meets your every expectation. We strive to create items that truly speak to their owners.
+			</p>
 			
-			<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-			</p>	<!-- Placeholder / REMEMBEER TO REMOVE -->
+			<p>Our process is meticulous, making sure to get every detail right. Our materials are kept simple to ensure each piece is 100% safe for your home.
+			</p>
 			
-			<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-			</p>	<!-- Placeholder / REMEMBEER TO REMOVE -->
+			<div class="white">
+				<!-- RUBRIC: Video/Audio (12/07) - Chosen as a brief example of the process used to make resin pieces. -->
+				<iframe id="video" src="https://www.youtube.com/embed/-2yjT9kS2v8"></iframe>
+				<!-- Used via Creative commons from: https://youtu.be/-2yjT9kS2v8 -->
+				
+				<p class="vidtxt">Brief example of the resin process.</p>
+			</div>
+			
+			<!-- RUBRIC: Text Lvl Element 5/5 (12/07) - Span tag to bold event title. -->
+			<p>Not sure exactly what you want? Come visit us at the <span class="event"><a href="#">Twilight City Art Festival</a></span> on January 8th! There you can see our work up close and personal, gather ideas, gain inspiration, or even buy your next piece. You'll find us at booth #299 next to the Moth Man sculpture.
+			</p>
+			
+			<div class="whitemoth">
+				<img id="moth" src="images/mothman.jpg" alt="Metal Moth Man Sculpture">
+				<!-- Used under Creative Commons from: https://flic.kr/p/ao5UFN -->
+				
+				<p class="vidtxt">Moth Man on Hope Street.</p>
+				
+			</div>
 		
 		</section>
 	
 	</main>
 
 	<footer>
-		<p>Copyright &copy; 2017 Wonky WhatsIts</p>
+		<!-- RUBRIC: Address tag (12/07) - Displays the company's mail address. -->
+		<address class="left">
+			Box 000, Twilight City<br>
+			Fantasy Land
+		</address>
+		
+		<!-- RUBRIC: Text Lvl Element 3/5 (12/07) - Use br tag to split text to two levels. -->
+		<a class="right" href="tel:1-555-000-5555">Call us at:<br>1-555-000-5555</a>
+	
+		<!-- RUBRIC: Text Lvl Element 4/5 (12/07) - Small tag to underemphasize the copyright text. -->
+		<p id="copyright"><small>Copyright &copy; 2017 Wonky WhatsIts</small></p>
 	</footer>
 		
 </body>

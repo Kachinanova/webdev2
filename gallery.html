@@ -5,7 +5,7 @@
 <!--
 Wonky WhatsIts
 Author: Katrina Ward
-Date: 11/24/2017
+Date: 12/07/2017
 -->
 
 
@@ -22,7 +22,7 @@ Date: 11/24/2017
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <link rel="icon" type="image/png" href="images/favicon.png">
-<!-- DONT FORGET TO MAKE ICON (SAME AS LOGO) -->
+
 <link href="wonky.css" rel="stylesheet">
 <link href="gallery.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Alice" rel="stylesheet">
@@ -41,6 +41,7 @@ Date: 11/24/2017
 		<img id="navicon" src="images/navicon.png" alt="Navigation Button">
 	
 		<ul>
+			<!-- RUBRIC: Text Lvl Element 1/5 (11/02) - "A" tag allows nav links to each page. -->
 			<li><a href="index.html">Home</a></li>
 			<li><a href="about.html">About</a></li>
 			<li><a href="gallery.html">Gallery</a></li>
@@ -55,17 +56,17 @@ Date: 11/24/2017
 				<input name="search" id="searchBox" type="text" placeholder="Search...">
 			</div>
 			
-			<div id="icons">	<!-- Found these icons at https://www.w3schools.com/howto/howto_css_social_media_buttons.asp -->
+			<div id="icons">
 				<a class="fa fa-facebook" href="#"></a>
 				<a class="fa fa-instagram" href="#"></a>
 				<a class="fa fa-pinterest" href="#"></a>
 				<a class="fa fa-etsy" href="#"></a>
-				
+				<!-- Found these icons at https://www.w3schools.com/howto/howto_css_social_media_buttons.asp -->
 			</div>
 			
 			<div class="mobile">
-				<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."
-				</p>	<!-- Placeholder / REMEMBEER TO REMOVE -->
+				<p>Every item shown can be made as shown or customized to fit your home. Feel free to contact us with any questions you may have regarding the items or process.
+				</p>
 			</div>
 			
 			<form>
@@ -149,7 +150,17 @@ Date: 11/24/2017
 	</main>
 
 	<footer>
-		<p>Copyright &copy; 2017 Wonky WhatsIts</p>
+		<!-- RUBRIC: Address tag (12/07) - Displays the company's mail address. -->
+		<address class="left">
+			Box 000, Twilight City<br>
+			Fantasy Land
+		</address>
+		
+		<!-- RUBRIC: Text Lvl Element 3/5 (12/07) - Use br tag to split text to two levels. -->
+		<a class="right" href="tel:1-555-000-5555">Call us at:<br>1-555-000-5555</a>
+	
+		<!-- RUBRIC: Text Lvl Element 4/5 (12/07) - Small tag to underemphasize the copyright text. -->
+		<p id="copyright"><small>Copyright &copy; 2017 Wonky WhatsIts</small></p>
 	</footer>
 		
 </body>

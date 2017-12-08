@@ -79,6 +79,18 @@ main	{
 }
 
 
+/* Pale green w/rounded left-border, floated right */
+aside	{
+	background-color: #e8ecea;
+	border-left: 2px solid #d5deda;
+	border-radius: 15px;
+	font-size: 1em;
+	min-height: 100%;
+	width: 250px;
+	padding: 20px;
+}
+
+
 /* Locks h1 & p sizes */
 h1	{
 	font-size: 1.8em;
@@ -89,6 +101,20 @@ p	{
 	font-size: 1.1em;
 	padding: 3px 10px;
 }
+
+
+/* Plain footer links w/ soft color change when hovered */
+footer a	{ text-decoration: none; }
+footer a:link	{ color: #efefef; }
+footer a:visited	{ color: #efefef; }
+footer a:hover	{ color: #d5deda; }
+
+
+/* Plain text links w/ soft color change when hovered */
+a	{ text-decoration: none; }
+a:link	{ color: black; }
+a:visited	{ color: black; }
+a:hover	{ color: #808080; }
 
 
 /* Centers ans stretches quoted text */
@@ -122,48 +148,14 @@ td	{
 }
 
 
-/* Centers numbers in table */
-.num	{
-	text-align: center;
-}
-
-
-/* Floats Right */
-.right	{
-	float: right;
-}
-
-
 /* Simple small white text */
 footer	{
-	font-size: .85em;
+	font-size: 1em;
 	color: #efefef;
 	text-align: center;
 
 }
 
-
-/* Pale green w/rounded left-border, floated right */
-aside	{
-	display: -webkit-flex;
-	display: flex;
-	
-	flex-direction: column;
-	flex-shrink: 0;
-	order: 99;
-	
-	align-content: flex-start;
-	align-items: center;
-	text-align: center;
-	
-	background-color: #e8ecea;
-	border-left: 2px solid #d5deda;
-	border-radius: 15px;
-	font-size: 1em;
-	min-height: 100%;
-	width: 250px;
-	padding: 20px;
-}
 
 section#content	{
 	flex: 1;
@@ -176,10 +168,6 @@ section#content	{
 	font-size: 3em;
 	width: 100%;
 	border-bottom: 1px solid #33282c;
-}
-
-#navicon	{
-	display: none;
 }
 
 
@@ -252,20 +240,37 @@ section#content	{
 }
 
 
-/* Circle images for aside / NOT SURE IF GONNA USE */
-.popular	{
-	background-color: white;
-	width: 80%;
-	border: 1px solid #808080;
-	padding: 2px;
-	margin: 20px auto;
+/* Sizing for moth man */
+#moth	{
+	width: 100%;
 }
 
 
-/* Tile behind non gallery images */
+/* Full width, centered, no border video */
+#video	{
+	width: 100%;
+	height: 400px;
+	margin: auto;
+	border: none;
+}
+
+
+/* Tile behind the crafter */
 .white	{
 	background-color: white;
+	width: 80%;
 	padding: 10px;
+	margin: auto;
+	border: 1px solid #808080;
+}
+
+
+/* Tile behind moth man */
+.whitemoth	{
+	background-color: white;
+	width: 50%;
+	padding: 10px;
+	margin: auto;
 	border: 1px solid #808080;
 }
 
@@ -277,6 +282,36 @@ section#content	{
 }
 
 
+/* Centers numbers in table */
+.num	{
+	text-align: center;
+}
+
+
+/* Floats Right */
+.right	{
+	float: right;
+	margin: 0px 10px;
+}
+
+/* Floats left */
+.left	{
+	float: left;
+	margin: 0px 10px;
+}
+
+
+/* Reduce size and spacing */
+.vidtxt	{
+	font-size: 1em;
+	padding: 0;
+	margin: 0;
+}
+
+
+.event	{
+	font-weight: bold;
+}
 
 
 /* This icon section is mostly modified from https://www.w3schools.com/howto/howto_css_social_media_buttons.asp */
@@ -305,20 +340,79 @@ section#content	{
 
 /*
 Check device type & display / DESKTOP: 1025px +
-RUBRIC: Desktop Query () - Not yet fleshed. - AT LEAST 3 SELECTORS
+RUBRIC: Desktop Query (12/07) - Sets aside, popular items, and navicon for desktop views. - AT LEAST 3 SELECTORS
 */
 @media only screen and (min-width: 1025px)	{
+	/* Displays as flex item, centers contents. */
+	aside	{
+		display: -webkit-flex;
+		display: flex;
+		
+		flex-direction: column;
+		flex-shrink: 0;
+		order: 99;
+		
+		align-content: flex-start;
+		align-items: center;
+		text-align: center;
+	}
 	
+	/* Mid sized images in aside, centered, soft padding, white bkg w/border */
+	.popular	{
+		background-color: white;
+		width: 80%;
+		border: 1px solid #808080;
+		padding: 2px;
+		margin: 20px auto;
+	}
+	
+	/* Hides nav icon when on desktop */
+	#navicon	{
+		display: none;
+	}
 }
 
 
 
 /*
 Check device type & mobile display / TABLET: 481px - 1024px
-RUBRIC: Tablet Query () - Not yet fleshed. - AT LEAST 3 SELECTORS
+RUBRIC: Tablet Query (12/07) - Moves aside below sections, hides elements. - AT LEAST 3 SELECTORS
 */
 @media only screen and (min-width: 481px) and (max-width: 1024px)	{
+	/* Hides nav icon when on tablet */
+	#navicon	{
+		display: none;
+	}
 	
+	/* Moves flexbox elements above/below each other */
+	main{
+		flex-flow: row wrap;
+	}
+	
+	
+	/* Removes bkg + border, stretches width */
+	aside	{
+		order: 99;
+		
+		align-content: flex-start;
+		align-items: center;
+		text-align: center;
+		
+		background: none;
+		border: none;
+		width: 80%;
+		margin: 10px auto;
+	}
+	
+	/* Moves center footer text below floated text */
+	#copyright	{
+		clear: both;
+		padding-top: 15px;
+	}
+	
+	.mobile	{
+		display: none;
+	}
 }
 
 
@@ -365,12 +459,27 @@ RUBRIC: Mobile Query (11/24) - Stream lines page, hided nav, shows navicon, hide
 	
 	/* Removes bkg + border, stretches width */
 	aside	{
+		order: 99;
+		
+		align-content: flex-start;
+		align-items: center;
+		text-align: center;
+		
 		background: none;
 		border: none;
-		width: 100%;
-		margin: 0;
+		width: 90%;
+		margin: 5px auto;
 	}
 	
+	#video	{
+		height: 275px;
+	}
+	
+	/* Moves center footer text below floated text */
+	#copyright	{
+		clear: both;
+		padding-top: 15px;
+	}
 	
 	/* Hides element */
 	.mobile	{
@@ -381,5 +490,5 @@ RUBRIC: Mobile Query (11/24) - Stream lines page, hided nav, shows navicon, hide
 	text-indent: 15px;
 	padding: 3px 10px;
 	text-align: justify;
-}
+	}
 }

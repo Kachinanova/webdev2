@@ -20,7 +20,8 @@ Date: 11/02/2017
 
 
 
-/* Sets width, white bkg, grey border */
+/* Sets width, white bkg, grey border
+RUBRIC: Box-Shadow (12/07) - Very subtle pop from section/body. */
 .tile	{
 	flex: auto;
 	
@@ -29,6 +30,8 @@ Date: 11/02/2017
 	padding: 10px;
 	margin: .5vw;
 	border: 1px solid #808080;
+	box-shadow: #808080 1px 0px 2px,
+				#909090 -1px 0px 2px;
 }
 
 

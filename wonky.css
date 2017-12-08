@@ -111,10 +111,10 @@ footer a:hover	{ color: #d5deda; }
 
 
 /* Plain text links w/ soft color change when hovered */
-a	{ text-decoration: none; }
-a:link	{ color: black; }
-a:visited	{ color: black; }
-a:hover	{ color: #808080; }
+span a	{ text-decoration: none; }
+span a:link	{ color: black; }
+span a:visited	{ color: black; }
+span a:hover	{ color: #808080; }
 
 
 /* Centers ans stretches quoted text */

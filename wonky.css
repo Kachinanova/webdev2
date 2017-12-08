@@ -21,8 +21,7 @@ html	{
 
 
 /* MedBrown body, Drk border w/blur, Alice font 
-RUBRIC: Border (11/02) - Sublte but crisp edge to page.
-RUBRIC: Box-Shadow (12/07) - Adds depth to body, floats off page. */
+RUBRIC: Border (11/02) - Sublte but crisp edge to page. */
 body	{
 	background-color: #926049;
 	font-family: 'Alice', serif;
@@ -358,11 +357,13 @@ RUBRIC: Desktop Query (12/07) - Sets aside, popular items, and navicon for deskt
 		text-align: center;
 	}
 	
-	/* Mid sized images in aside, centered, soft padding, white bkg w/border */
+	/* Mid sized images in aside, centered, soft padding, white bkg w/border 
+	RUBRIC: Advanced style on Image (12/07) - Slightly rounded corners to smooth sharp edges. */
 	.popular	{
 		background-color: white;
 		width: 80%;
 		border: 1px solid #808080;
+		border-radius: 5%;
 		padding: 2px;
 		margin: 20px auto;
 	}

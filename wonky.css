@@ -21,7 +21,8 @@ html	{
 
 
 /* MedBrown body, Drk border w/blur, Alice font 
-RUBRIC: Border (11/02) - Sublte but crisp edge to page. */
+RUBRIC: Border (11/02) - Sublte but crisp edge to page.
+RUBRIC: Box-Shadow (12/07) - Adds depth to body, floats off page. */
 body	{
 	background-color: #926049;
 	font-family: 'Alice', serif;
